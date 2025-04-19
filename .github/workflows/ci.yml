@@ -38,7 +38,7 @@ jobs:
         run: (test -z $(go fmt ./...))
 
   lint:
-    name: "Run Staticcheck"
+    name: Staticcheck
     runs-on: ubuntu-latest
 
     steps:
