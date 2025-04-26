@@ -38,7 +38,7 @@ jobs:
               run: 
                 gcloud builds submit --tag us-central1-docker.pkg.dev/notely-457718/notely-ar-repo/notely:latest .
 
-            - name: Run Database Migrations
+            - name: Run Database Migrations 
               env:
                 DATABASE_URL: ${{ secrets.DATABASE_URL }}
               run: ./scripts/migrateup.sh
